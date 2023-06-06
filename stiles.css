@@ -102,6 +102,7 @@ iframe{
     margin: auto;
     margin-top: 150px;
     size: 500px;
+    background-color: azure;
 
 }
 
@@ -111,7 +112,7 @@ footer{
     background-color: black;
     height: 100px;
     margin: auto;
-    margin-top: 100%;
+    margin-top: 0;
 }
 footer p{
     font-family: 'catamaran';
