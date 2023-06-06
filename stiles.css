@@ -66,24 +66,9 @@ nav ul li{
     font-weight: bold;
     
 }
+/* CUERPO de PAGINA */
 
-
-
-/* FOOTER todo relacionaod por el pie de pagina  */
-footer{
-    background-color: black;
-    height: 100px;
-    margin: auto;
-    margin-top: 100%;
-}
-footer p{
-    font-family: 'catamaran';
-    text-align: center;
-    padding-top: 30px;
-    color: rgb(47, 122, 85);
-}
-
- div h3{
+div h3{
     text-align: center;
     
  }
@@ -100,9 +85,41 @@ iframe{
     text-decoration: none;
     color: black;
 }
+.horario img{
+    padding: auto;
+    padding-left: 200px;
+}
 .horario p{
     text-align: center;
 }
+.eslogan {
+    width: 0 auto;
+    height:300px ;
+
+}
+.eslogan p{
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    size: 500px;
+
+}
+
+
+/* FOOTER todo relacionaod por el pie de pagina  */
+footer{
+    background-color: black;
+    height: 100px;
+    margin: auto;
+    margin-top: 100%;
+}
+footer p{
+    font-family: 'catamaran';
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(47, 122, 85);
+}
+
 
 
 
