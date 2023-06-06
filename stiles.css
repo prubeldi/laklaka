@@ -93,11 +93,9 @@ iframe{
    
 }
 .horario img{
-    padding: auto;
-    padding-left: 200px;
 }
 .horario p{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     
 }
