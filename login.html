@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="myjavascrip.js">
+    <link rel="stylesheet" href="stiles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="contenedor__todo">
+
+            <div class="caja__trasera">
+                <div class="caja__trasera__login">
+                    <h3>¿Tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__inicio__sesion">Iniciar sesión</button>
+                </div>
+                <div class="caja__trasera__registro">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Regístrate para acceder a la página</p>
+                    <button id="btn_registrarse">Regístrase</button>
+                </div>
+
+            </div>
+            <!-- Formulario de login y registro -->
+            <div class="contenedor__login-registro">
+                <!-- login -->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar sesión</h2>
+                    <input placeholder="username" type="text" id="username" >
+                    <input placeholder="password" type="password" id="password" >
+                    <button type="button" onclick="abrirInicio()" id="button">Entrar</button>
+                </form>
+                <!-- Registro -->
+                <form action="" class="formulario__registro">
+                    <h2>Regístrate</h2>
+                    <input type="text" placeholder="Nombre competo">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Regístrase</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!--  -->
+        <script src="myjavascrip.js"></script>
+    </main>
+</body>
+</html>
+
+<!-- 
+<label>
+    <i class="fa-solid fa-lock"></i>
+    <input placeholder="password" type="password" id="password" >
+</label>
+<input type="checkbox" id="showPassword">
+<p>Mostrar contraseña</p>
+
+<a href="#" class="link"> ¿Has olvidado tu contraseña?</a> -->
