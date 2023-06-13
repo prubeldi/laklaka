@@ -1,7 +1,47 @@
 document.getElementById("btn__registrarse").addEventListener("click", registro);
 document.getElementById("btn__inicio-sesion").addEventListener("click", iniciarSesion);
 window.addEventListener("resize", anchoPagina);
+document.getElementById("btn_login").addEventListener("click", login);
+// document.getElementById("btn_register").addEventListener("click", register);
 
+function register() {
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  localStorage.setItem("username", username);
+  localStorage.setItem("password", password);
+  
+}
+
+function login() {
+
+  let user = localStorage.getItem("username");
+  let pass = localStorage.getItem("password");
+
+  if (user != null && pass != null) {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if (user == username && pass == password) {
+      // Redireccionar a la página de inicio
+      window.location.href = "https://prubeldi.github.io/";
+    } else {
+      alert("Error: Usuario o contraseña incorrectos");
+    }
+  }
+}
+
+
+function showInfo(){
+  let info = document.getElementById("lorem");
+
+  if(info.style.display == "none"){
+      info.style.display = "block";
+  }
+  else{
+      info.style.display = "none";
+  }
+}
 var contenedor_login_resgistro = document.querySelector('.contenedor__login-registro');
 var formulario_login = document.querySelector('.formulario__login');
 var formulario_registro = document.querySelector('.formulario__registro');
@@ -54,43 +94,6 @@ function registro() {
     caja_trasera_login.style.opacity = "1";
   }
 }
-
-function login() {
-  let user = localStorage.getItem("username");
-  let pass = localStorage.getItem("password");
-
-  if (user != null && pass != null) {
-    let username = document.getElementById("user").value;
-    let password = document.getElementById("pass").value;
-
-    if (user == username && pass == password) {
-      // Redireccionar a la página de inicio
-      window.location.href = "https://prubeldi.github.io/";
-    } else {
-      alert("Error: Usuario o contraseña incorrectos");
-    }
-  }
-}
-
-function register() {
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
-
-  localStorage.setItem("username", username);
-  localStorage.setItem("password", password);
-}
-
-function showInfo() {
-  let info = document.getElementById("info");
-
-  if (info.style.display == "none") {
-    info.style.display = "block";
-  } else {
-    info.style.display = "none";
-  }
-}
-
-
 
 
 
