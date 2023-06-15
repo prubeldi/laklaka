@@ -42,6 +42,9 @@ header div a {
 }
 
 /* ---------- MENÚ ---------- */
+#lorem{
+    display: none;
+}
 img{
     float: left;
     padding: 8px;

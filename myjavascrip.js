@@ -2,11 +2,11 @@ document.getElementById("btn__registrarse").addEventListener("click", registro);
 document.getElementById("btn__inicio-sesion").addEventListener("click", iniciarSesion);
 window.addEventListener("resize", anchoPagina);
 document.getElementById("btn_login").addEventListener("click", login);
-// document.getElementById("btn_register").addEventListener("click", register);
+document.getElementById("btn_register").addEventListener("click", register);
 
 function register() {
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
+  let username = document.getElementById("rusername").value;
+  let password = document.getElementById("rpassword").value;
 
   localStorage.setItem("username", username);
   localStorage.setItem("password", password);
@@ -19,8 +19,8 @@ function login() {
   let pass = localStorage.getItem("password");
 
   if (user != null && pass != null) {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+    let username = document.getElementById("lusername").value;
+    let password = document.getElementById("lpassword").value;
 
     if (user == username && pass == password) {
       // Redireccionar a la página de inicio
@@ -33,7 +33,9 @@ function login() {
 
 
 function showInfo(){
+  
   let info = document.getElementById("lorem");
+  
 
   if(info.style.display == "none"){
       info.style.display = "block";
